@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<!-- saved from url=(0049)https://getbootstrap.com/2.3.2/examples/hero.html -->
+<html lang="en">
+    <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>XYZ Application</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+
+    <link href="css/bootstrap.css" rel="stylesheet">
+   
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+
+   <style type="text/css">
+      body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+      }
+    </style>
+        
+      
+ 
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+         
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+                
+                <!--------File---->
+                
+                <li class="dropdown">
+                <a id="file_menu" name="start" href="#" data-toggle="dropdown">File </a>
+                <ul class="dropdown-menu">
+                  <li class="dropdown-submenu"><a href="#">New</a>
+                     <ul class="dropdown-menu">
+                           <li><a tabindex="-1" href="#">Project</a></li>
+                         <li><a tabindex="-1" href="#">File</a></li>
+                      </ul>
+                    
+                    
+                    </li>
+                    
+                             <li class="dropdown-submenu"><a href="#">Open</a>
+                     <ul class="dropdown-menu">
+                           <li><a tabindex="-1" href="#">Project</a></li>
+                         <li><a id="file" tabindex="-1" href="#" name="end">File</a></li>
+                      </ul>
+                    
+                    
+                    </li>
+                    
+                  <li><a href="#">Save</a></li>
+                  <li><a href="#">Close</a></li>
+                 
+                  
+                  <li><a href="#">Properties</a></li>
+                 
+                </ul>
+              </li>
+                
+                 <!--------File---->
+                
+                
+                        <!--------Edit---->
+                
+                <li class="dropdown">
+                <a id="edit_menu" name="start" href="#" class="dropdown-toggle" data-toggle="dropdown">Edit </a>
+                <ul class="dropdown-menu">
+                  <li class="dropdown-submenu"><a href="#">Transform</a>
+                     <ul class="dropdown-menu">
+                           <li><a tabindex="-1" href="#">Skew</a></li>
+                         <li><a tabindex="-1" href="#">Distort</a></li>
+                          <li><a tabindex="-1" href="#">Scale</a></li>
+                         <li><a tabindex="-1" href="#">Rotate</a></li>
+                      </ul>
+                    
+                    
+                    </li>
+                    
+                    
+                      <li><a href="#">Assign profile</a></li>
+                  <li><a href="#">Fill</a></li>
+                    
+                             <li class="dropdown-submenu"><a href="#">Preferences</a>
+                     <ul class="dropdown-menu">
+                           <li><a tabindex="-1" href="#">General</a></li>
+                         <li><a tabindex="-1" href="#">Camera Raw</a></li>
+                          <li><a tabindex="-1" href="#">Tools</a></li>
+                      </ul>
+                    
+                    
+                    </li>
+                    
+                
+                 
+                  
+              
+                 
+                </ul>
+              </li>
+                
+                 <!--------Edit---->
+                
+                 <!--------Filter---->
+                
+                <li class="dropdown">
+                <a id="filter_menu" name="start" href="#" class="dropdown-toggle" data-toggle="dropdown">Filter </a>
+                <ul class="dropdown-menu">
+                  <li class="dropdown-submenu"><a href="#">Blur</a>
+                     <ul class="dropdown-menu">
+                           <li><a tabindex="-1" href="#">Average</a></li>
+                         <li><a tabindex="-1" href="#">Radial Blur</a></li>
+                          <li><a tabindex="-1" href="#">Gaussian Blur</a></li>
+                         <li><a tabindex="-1" href="#">Lens Blur</a></li>
+                      </ul>
+                    
+                    
+                    </li>
+                    
+                    
+                  
+                    
+                             <li class="dropdown-submenu"><a href="#">Distort</a>
+                     <ul class="dropdown-menu">
+                           <li><a tabindex="-1" href="#">Displace</a></li>
+                         <li><a tabindex="-1" href="#">Pinch</a></li>
+                          <li><a tabindex="-1" href="#">Twirl</a></li>
+                      </ul>
+                    
+                    
+                    </li>
+                    
+                    
+                    
+                             <li class="dropdown-submenu"><a href="#">Stylize</a>
+                     <ul class="dropdown-menu">
+                           <li><a tabindex="-1" href="#">Tiles</a></li>
+                         <li><a tabindex="-1" href="#">Oil Paint</a></li>
+                          <li><a tabindex="-1" href="#">Wind</a></li>
+                          <li><a tabindex="-1" href="#">Diffuse</a></li>
+                          <li><a tabindex="-1" href="#">Emboss</a></li>
+                      </ul>
+                    
+                    
+                    </li>
+                    
+                    
+                    
+                             <li class="dropdown-submenu"><a href="#">Noise</a>
+                     <ul class="dropdown-menu">
+                           <li><a tabindex="-1" href="#">Add Noise</a></li>
+                         <li><a tabindex="-1" href="#">Reduce Noise</a></li>
+                          <li><a tabindex="-1" href="#">Diffuse Noise</a></li>
+                       
+                      </ul>
+                    
+                    
+                    </li>
+                    
+                    
+                
+                 
+                  
+              
+                 
+                </ul>
+              </li>
+                
+                 <!--------Filter---->
+                
+                
+                   <!--------Publish---->
+                
+                <li class="dropdown">
+                <a id="publish_menu" name="start" href="#" class="dropdown-toggle" data-toggle="dropdown">Publish </a>
+                <ul class="dropdown-menu">
+                  <li class="dropdown-submenu"><a href="#">To File</a>
+                     <ul class="dropdown-menu">
+                           <li><a tabindex="-1" href="#">Local Drive</a></li>
+                         <li class="dropdown-submenu"><a tabindex="-1" href="#">Cloud</a>
+                          <ul class="dropdown-menu">
+                             
+                             <li><a tabindex="-1" href="#">Google Drive</a></li>
+                              <li><a tabindex="-1" href="#">Amazon S3</a></li>
+                              <li><a tabindex="-1" href="#">DropBox</a></li>
+                             
+                             
+                             </ul>
+                         
+                         
+                         </li>
+                          <li><a tabindex="-1" href="#">NAS</a></li>
+                         
+                      </ul>
+                    
+                    
+                    </li>
+                    
+                    
+                  
+                    
+                             <li class="dropdown-submenu"><a href="#">To Web</a>
+                     <ul class="dropdown-menu">
+                           <li><a tabindex="-1" href="#">Facebook</a></li>
+                         <li><a tabindex="-1" href="#">Instagram</a></li>
+                          <li><a tabindex="-1" href="#">Youtube (thumbnail)</a></li>
+                      </ul>
+                    
+                    
+                    </li>
+                    
+                    
+                    
+                         
+                  
+                    </ul>
+                </li>
+                 
+                
+                
+                 <!--------Publish---->
+                
+                
+           
+              
+          <!---!>
+              </ul>
+            
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+
+          <div class="jumbotron text-center">
+        <h1>XYZ Application</h1>
+
+    </div>
+    </div> <!-- /container -->
+
+ 
+    <script src="js/jquery.js"></script>
+
+    <script src="js/bootstrap-dropdown.js"></script>
+       <!--  <script type="text/javascript" src="js/jquery.ajax-cross-origin.min.js"></script>-->
+
+
+
+    <script type="application/javascript">
+        
+        alert(window.screen.availHeight+"x"+window.screen.availWidth)
+        
+        window.path="";
+        window.mouseFlip=0;
+        // var screenMap = Array.from(Array(10), _ => Array(10).fill(0));
+        var screenMap = Array.from(Array(window.screen.availWidth), _ => Array(window.screen.availHeight).fill(0));
+        
+            $('a').on('click', function(e){
+                //alert(this.id+"name:"+this.name);
+                if(this.name==="start"){
+                 window.mouseFlip=1;
+                     document.addEventListener('mousemove', mouseUpdate); 
+                }
+                
+                window.path+=this.id+":";
+                if(this.name==="end"){
+                     document.removeEventListener('mousemove', mouseUpdate);
+                      alert(window.path);
+                     window.mouseFlip=0;
+                    window.path="";
+                    console.log(JSON.stringify({screenMap}));
+                    $.ajax({
+                        crossDomain: true,
+        url:"http://127.0.0.1",
+        type:"POST",
+                        traditional:true,
+        dataType:'json',
+        success:function(data){
+            // codes....
+        },
+        data:JSON.stringify({screenMap}),
+        contentType: 'application/json'
+    });
+                }
+                
+//                while( window.mouseFlip==1){
+//                     xpos = window.event.screenX;
+//    ypos = window.event.screenY;
+//                    screenMap[xpos][ypos]=1;
+//                }
+            });
+        
+        
+       function mouseUpdate(){
+            xpos = window.event.screenX;
+    ypos = window.event.screenY;
+                screenMap[xpos][ypos]=1;
+           console.log(xpos,ypos);
+       }
+        
+        </script>
+
+</body>

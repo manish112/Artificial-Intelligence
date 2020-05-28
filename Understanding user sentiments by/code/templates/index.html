@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<!-- saved from url=(0049)https://getbootstrap.com/2.3.2/examples/hero.html -->
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>XYZ Application</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+
+    <link href="{{ url_for('static', filename='css/bootstrap.css') }}" rel="stylesheet">
+
+    <link href="{{ url_for('static', filename='css/bootstrap-responsive.css') }}" rel="stylesheet">
+
+
+
+    <style type="text/css">
+        body {
+            padding-top: 60px;
+            padding-bottom: 40px;
+        }
+    </style>
+
+
+
+</head>
+
+<body>
+
+
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container">
+
+                <div class="nav-collapse collapse">
+                    <ul class="nav">
+
+                        <!--------File---->
+
+                        <li class="dropdown">
+                            <a id="file_menu" name="start" href="#" data-toggle="dropdown">File </a>
+                            <ul class="dropdown-menu">
+                                <li class="dropdown-submenu"><a href="#">New</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a id="file_new_newproject" name="end" tabindex="-1" href="#">Project</a></li>
+                                        <li><a id="file_new_newfile" name="end" tabindex="-1" href="#">File</a></li>
+                                    </ul>
+
+
+                                </li>
+
+                                <li class="dropdown-submenu"><a href="#">Open</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a id="file_open_openproject" name="end" tabindex="-1" href="#">Project</a></li>
+                                        <li><a id="file_open_openfile" tabindex="-1" href="#" name="end">File</a></li>
+                                    </ul>
+
+
+                                </li>
+
+                                <li><a id="file_save" name="end" href="#">Save</a></li>
+                                <li><a id="file_close" name="end" href="#">Close</a></li>
+
+
+                                <li><a id="file_properties" name="end" href="#">Properties</a></li>
+
+                            </ul>
+                        </li>
+
+                        <!--------File---->
+
+
+                        <!--------Edit---->
+
+                        <li class="dropdown">
+                            <a id="edit_menu" name="start" href="#" class="dropdown-toggle" data-toggle="dropdown">Edit </a>
+                            <ul class="dropdown-menu">
+                                <li class="dropdown-submenu"><a href="#">Transform</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a id="edit_transform_skew" name="end" tabindex="-1" href="#">Skew</a></li>
+                                        <li><a id="edit_transform_distort" name="end" tabindex="-1" href="#">Distort</a></li>
+                                        <li><a id="edit_transform_scale" name="end" tabindex="-1" href="#">Scale</a></li>
+                                        <li><a id="edit_transform_rotate" name="end" tabindex="-1" href="#">Rotate</a></li>
+                                    </ul>
+
+
+                                </li>
+
+
+                                <li><a id="edit_assignprofile" name="end" href="#">Assign profile</a></li>
+                                <li><a id="edit_fill" name="end" href="#">Fill</a></li>
+
+                                <li class="dropdown-submenu"><a href="#">Preferences</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a id="edit_preferences_general" name="end" tabindex="-1" href="#">General</a></li>
+                                        <li><a id="edit_preferences_cameraraw" name="end" tabindex="-1" href="#">Camera Raw</a></li>
+                                        <li><a id="edit_preferences_tools" name="end" tabindex="-1" href="#">Tools</a></li>
+                                    </ul>
+
+
+                                </li>
+
+
+
+
+
+
+                            </ul>
+                        </li>
+
+                        <!--------Edit---->
+
+                        <!--------Filter---->
+
+                        <li class="dropdown">
+                            <a id="filter_menu" name="start" href="#" class="dropdown-toggle" data-toggle="dropdown">Filter </a>
+                            <ul class="dropdown-menu">
+                                <li class="dropdown-submenu"><a href="#">Blur</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a id="filter_blur_average" name="end" tabindex="-1" href="#">Average</a></li>
+                                        <li><a id="filter_blur_radialblur" name="end" tabindex="-1" href="#">Radial Blur</a></li>
+                                        <li><a id="filter_blur_gaussianblur" name="end" tabindex="-1" href="#">Gaussian Blur</a></li>
+                                        <li><a id="filter_blur_lensblur" name="end" tabindex="-1" href="#">Lens Blur</a></li>
+                                    </ul>
+
+
+                                </li>
+
+
+
+
+                                <li class="dropdown-submenu"><a href="#">Distort</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a id="filter_distort_displace" name="end" tabindex="-1" href="#">Displace</a></li>
+                                        <li><a id="filter_distort_pinch" name="end" tabindex="-1" href="#">Pinch</a></li>
+                                        <li><a id="filter_distort_twirl" name="end" tabindex="-1" href="#">Twirl</a></li>
+                                    </ul>
+
+
+                                </li>
+
+
+
+                                <li class="dropdown-submenu"><a href="#">Stylize</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a id="filter_stylize_tiles" name="end" tabindex="-1" href="#">Tiles</a></li>
+                                        <li><a id="filter_stylize_oilpaint" name="end" tabindex="-1" href="#">Oil Paint</a></li>
+                                        <li><a id="filter_stylize_wind" name="end" tabindex="-1" href="#">Wind</a></li>
+                                        <li><a id="filter_stylize_diffuse" name="end" tabindex="-1" href="#">Diffuse</a></li>
+                                        <li><a id="filter_stylize_emboss" name="end" tabindex="-1" href="#">Emboss</a></li>
+                                    </ul>
+
+
+                                </li>
+
+
+
+                                <li class="dropdown-submenu"><a href="#">Noise</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a id="filter_noise_addnoise" name="end" tabindex="-1" href="#">Add Noise</a></li>
+                                        <li><a id="filter_noise_reducenoise" name="end" tabindex="-1" href="#">Reduce Noise</a></li>
+                                        <li><a id="filter_noise_diffusenoise" name="end" tabindex="-1" href="#">Diffuse Noise</a></li>
+
+                                    </ul>
+
+
+                                </li>
+
+
+
+
+
+
+
+                            </ul>
+                        </li>
+
+                        <!--------Filter---->
+
+
+                        <!--------Publish---->
+
+                        <li class="dropdown">
+                            <a id="publish_menu" name="start" href="#" class="dropdown-toggle" data-toggle="dropdown">Publish </a>
+                            <ul class="dropdown-menu">
+                                <li class="dropdown-submenu"><a href="#">To File</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a id="publish_tofile_localdrive" name="end" tabindex="-1" href="#">Local Drive</a></li>
+                                        <li class="dropdown-submenu"><a tabindex="-1" href="#">Cloud</a>
+                                            <ul class="dropdown-menu">
+
+                                                <li><a id="publish_tofile_cloud_googledrive" name="end" tabindex="-1" href="#">Google Drive</a></li>
+                                                <li><a id="publish_tofile_cloud_amazons3" name="end" tabindex="-1" href="#">Amazon S3</a></li>
+                                                <li><a tabindex="-1" id="publish_tofile_cloud_dropbox" href="#" name="end">DropBox</a></li>
+
+
+                                            </ul>
+
+
+                                        </li>
+                                        <li><a id="publish_tofile_nas" name="end" tabindex="-1" href="#">NAS</a></li>
+
+                                    </ul>
+
+
+                                </li>
+
+
+
+
+                                <li class="dropdown-submenu"><a href="#">To Web</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a id="publish_toweb_facebook" name="end" tabindex="-1" href="#">Facebook</a></li>
+                                        <li><a id="publish_toweb_instagram" name="end" tabindex="-1" href="#">Instagram</a></li>
+                                        <li><a id="publish_toweb_youtube" name="end" tabindex="-1" href="#">Youtube (thumbnail)</a></li>
+                                    </ul>
+
+
+                                </li>
+
+
+
+
+
+                            </ul>
+                        </li>
+
+
+
+                        <!--------Publish---->
+
+
+
+
+
+                    </ul>
+
+                </div>
+                <!--/.nav-collapse -->
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+
+        <div class="jumbotron text-center">
+            <h1>XYZ Application</h1>
+
+
+            <div id="myModal" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title" id="mHeader">Modal Header</h4>
+                        </div>
+                        <div class="modal-body" id="mBody">
+                            <p>Some text in the modal.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+
+            <br /><br />
+            <p id="status"><br /></p>
+            <br /><br />
+            <table class="table">
+                <thead>
+                    <tr>
+
+                        <th>Operation Mode</th>
+
+                        <th>User Data</th>
+
+                        <th>End operation simulate</th>
+                    </tr>
+
+
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+
+
+
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" id="using" name="applicationModeradios" onclick="callme('evaluate')" checked>
+                                    Using application</label>
+                                <label>
+                                    <input type="radio" id="train" name="applicationModeradios" onclick="callme('train')">
+                                    Training data</label>
+                                <label>
+                                    <input type="radio" id="Validation" name="applicationModeradios" onclick="callme('validation')">
+                                    Validation data</label>
+                            </div>
+                            
+                            <br/>
+                            <br/>
+                            <br/>
+                            <br/>
+                            <a onclick="cancelData()">Cancel data collection</a>
+
+                        </td>
+                        <td>
+                            <div class="form-group">
+                                <label for="usr">Username:</label>
+                                <input type="text" class="form-control" id="usr" value="manish">
+                            </div>
+
+                            <br /><br />
+
+                            <label>User experience level:</label>
+
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" id="beginer" name="userLevel" onclick="setUserLevel('1')" checked>
+                                    Beginer</label>
+                                <label>
+                                    <input type="radio" id="intermeditae" name="userLevel" onclick="setUserLevel('2')">
+                                    Intermediate</label>
+                                <label>
+                                    <input type="radio" id="professional" name="userLevel" onclick="setUserLevel('3')">
+                                    Professional</label>
+                            </div>
+                        </td>
+
+                        <td>
+
+
+
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" id="success" name="endOperation" onclick="setOperationStatus('1')" checked>
+                                    Operation success</label>
+                                <label>
+                                    <input type="radio" id="fail" name="endOperation" onclick="setOperationStatus('2')">
+                                    Operation failed</label>
+
+                            </div>
+                            
+                            <br/><br/>
+                            
+                              <div class="form-group">
+                                <label for="delay">Delay in ms:</label>
+                                <input type="text" class="form-control" id="delayms" value="0.0">
+                            </div>
+                            
+                        </td>
+
+
+                    </tr>
+
+
+                </tbody>
+
+            </table>
+
+        </div>
+    </div> <!-- /container -->
+
+
+
+
+
+    <script src="{{ url_for('static', filename='js/jquery.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/bootstrap-dropdown.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/bootstrap-modal.js') }}"></script>
+
+
+
+
+    <!--  <script type="text/javascript" src="js/jquery.ajax-cross-origin.min.js"></script>-->
+
+
+
+    <script type="application/javascript">
+        // alert(window.screen.availHeight + "x" + window.screen.availWidth)
+
+        window.path = "";
+        window.mouseFlip = 0;
+        window.mode = "evaluate";
+        var obj = "";
+        window.userLevel = 1;
+        window.OperationOutcome = 1;
+        // var screenMap = Array.from(Array(10), _ => Array(10).fill(0));
+        var screenMap = Array.from(Array(window.screen.availWidth), _ => Array(window.screen.availHeight).fill(0));
+
+        $('a').on('click', function(e) {
+            //alert(this.id+"name:"+this.name);
+            if (this.name === "start") {
+                if (window.mode != "evaluate") {
+                    document.getElementById('status').innerText = "Capturing mouse data.";
+                }
+                window.mouseFlip = 1;
+                document.addEventListener('mousemove', mouseUpdate);
+            }
+
+            window.path += this.id + ":";
+            if (this.name === "end") {
+                document.removeEventListener('mousemove', mouseUpdate);
+                // alert(window.path);
+                window.mouseFlip = 0;
+                window.path = "";
+
+                if (window.mode === "evaluate") {
+
+                    if (window.OperationOutcome == 1) {
+                        document.getElementById('mHeader').innerHTML = "Sucess";
+                        document.getElementById('mBody').innerHTML = "User opertaion is a sucess";
+                    } else {
+                        document.getElementById('mHeader').innerHTML = "Failure";
+                        document.getElementById('mBody').innerHTML = "User opertaion has failed";
+                    }
+
+                    $('#myModal').modal({
+                        backdrop: false
+                    });
+                    obj = {
+                        mode: window.mode,
+                        userLevel: window.userLevel,
+                        operationStatus: window.OperationOutcome,
+                        operationEnd: this.id,
+                        companyName: 'abccorp',
+                        path: document.getElementById('usr').value,
+                        screenMap: screenMap,
+                        delay: document.getElementById('delayms').value
+                    };
+
+                } else {
+                    obj = {
+                        mode: window.mode,
+                        path: this.id + '/',
+                        screenMap: screenMap
+                    };
+                }
+
+                if (window.mode != "evaluate") {
+
+                    document.getElementById('status').innerText = "Sending data to server...";
+                }
+                $.ajax({
+
+                    //url:"/register",
+                    url: "/" + window.mode,
+                    type: "POST",
+                    dataType: 'json',
+                    async: true,
+                    success: function(data) {
+
+                        document.getElementById('status').innerHTML = data.success;
+                    },
+
+                    data: JSON.stringify(
+                        obj
+                    ),
+                    contentType: 'application/json'
+                });
+                screenMap = Array.from(Array(window.screen.availWidth), _ => Array(window.screen.availHeight).fill(0));
+            }
+
+
+        });
+        
+        
+        function cancelData(){
+             document.removeEventListener('mousemove', mouseUpdate);
+                // alert(window.path);
+                window.mouseFlip = 0;
+                window.path = "";
+             screenMap = Array.from(Array(window.screen.availWidth), _ => Array(window.screen.availHeight).fill(0));
+             document.getElementById('status').innerHTML ="<br/>";
+        }
+
+
+        function mouseUpdate() {
+            xpos = window.event.screenX;
+            ypos = window.event.screenY;
+            screenMap[xpos][ypos] = 255;
+            console.log(xpos, ypos);
+        }
+
+        function callme(selected_mode) {
+            window.mode = selected_mode;
+        }
+
+        function setUserLevel(selected_level) {
+            window.userLevel = selected_level;
+        }
+
+        function setOperationStatus(selected_outcome) {
+            window.OperationOutcome = selected_outcome;
+        }
+    </script>
+
+</body>
